@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>live</title>
+		<link rel="stylesheet" href="../css/pubilic.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<style>
+		.shangArrow{
+			height: 25px;
+		}
+		.dizhi a{
+			background:none;
+		}
+		#wrap{
+		margin-bottom: 0;
+		}
+		.content{
+			position: relative;
+			width: 100%;
+			max-width: 740px;
+			overflow: hidden;
+		}
+		.left{
+			width: 25%;
+			background-color: #f1f2f3;
+			display: inline-block;
+			float:left;
+		}
+		.left button{
+			float: right;
+			display: block;
+			width: 100%;
+			height: 50px;
+			border:none;
+			background-color: #f1f2f3;
+			font-size: 15px;
+		}
+		.left button:hover{
+			background-color: #e5e6e7;
+			border-left: 10px solid #ec9119;
+		}
+		.right{
+			width: 75%;
+			float:left;
+		}
+		.r{
+			display: none;
+		}
+		.right .r-active{
+			display: block;
+		}
+		.listF{
+
+			
+		}
+		.listF li{
+			margin: 10px;
+
+			border-bottom: 1px solid #d9d7d8;
+		}
+		.header{
+			width: 90px;
+			display: inline-block;
+		}
+		.det{
+			display: inline-block;
+			height: 90px;
+			font-size: 15px;
+			vertical-align:top;
+			color: #a3a3a3;
+		}
+		.det p:nth-child(1){
+			font-size: 15px;
+			color: black;
+			margin-bottom: 25px;
+			margin-top: 5px;
+		}	
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<p class="tou">
+			<span class="dizhi" class="clearfix"><a href="../index.html"><img src="../img/arrow.png" class="shangArrow"/></a></span>
+			<span>生活家居</span>
+		</p>	
+		<div id="wrap">
+		<div id="inner">
+			<a href="###"><img src="../img/food/f1.png" alt=""></a>
+			<a href="###"><img src="../img/food/f1.png" alt=""></a>
+			<a href="###"><img src="../img/food/f1.png" alt=""></a>
+			<a href="###"><img src="../img/food/f1.png" alt=""></a>
+		</div>
+		<div class="paganation" id="paganation">
+			<span class ="active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<a class="left-arrow" href="javascript:void(0);">&lt;</a>
+		<a class="right-arrow" href="javascript:void(0);">&gt;</a>
+		</div>
+		<div class="content clearfix">
+		<div class="left clearfix" >
+			<button>传统糕点</button>
+			<button>膨化食品</button>
+			<button>无糖食品</button>
+			<button>休闲食品</button>
+			<button>燕麦食品</button>
+			<button>坚果炒货</button>
+		</div>
+		<div class="right">
+			<div class="r">1</div>
+			<div class="r r-active">
+				<ul class="listF">
+					<li><a href="details.html">
+					<img src="../img/food/f2.png" class="header"/>
+					<div class="det">
+				
+					<p>薯条点心面休闲零食五味园 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小包装500g</p>
+					
+					<p><span style="color:#d90000">￥11.5</span>&nbsp;&nbsp; 原价￥12.8</p>
+					
+					</div>
+					</a>
+					</li>
+					<li>
+					<a href="details.html">
+					<img src="../img/food/f2.png" class="header"/>
+					<div class="det">
+				
+					<p>薯条点心面休闲零食五味园 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小包装500g</p>
+					<p><span style="color:#d90000">￥11.5</span>&nbsp;&nbsp; 原价￥12.8</p>
+					</div>
+					</a>
+					</li>
+					<li>
+					<a href="details.html">
+						<img src="../img/food/f2.png" class="header"/>
+					<div class="det">
+				
+					<p>薯条点心面休闲零食五味园 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小包装500g</p>
+					<p><span style="color:#d90000">￥11.5</span>&nbsp;&nbsp; 原价￥12.8</p>
+					</div>
+					</a>
+					</li>
+					<li>
+					<a href="details.html">
+						<img src="../img/food/f2.png" class="header"/>
+					<div class="det">
+				
+					<p>薯条点心面休闲零食五味园 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小包装500g</p>
+					<p><span style="color:#d90000">￥11.5</span>&nbsp;&nbsp;原价￥12.8</p>
+					</div>
+					</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="r">3</div>
+			<div class="r">4</div>
+			<div class="r">5</div>
+			<div class="r">6</div>
+		</div>
+		</div>
+		
+		<script src="../js/jquery.min.js"></script>
+		<script>
+//		轮播图
+		$(function() {
+	var index = 0;//当前图片的下标
+	var perWidth = $("#inner a").eq(0).width();//每张图片的宽度
+
+	function tab() {
+		$("#inner").stop().animate({
+			left:-index * perWidth
+		})
+		// $(this).addClass("active").siblings().removeClass("active");
+		$("#paganation span").eq(index).addClass("active").siblings().removeClass("active");
+	}
+	function prev() {
+		index--;
+		if(index < 0) {
+			index = $("#paganation span").size() - 1;
+		}
+		tab();
+	}
+	function next() {
+		index++;
+		if(index > $("#paganation span").size() - 1) {
+			//.size() .length 返回的是个数
+			index = 0;
+		}
+		tab();
+	}
+	//1.给下面小原点加事件
+	$("#paganation span").on("mouseenter",function() {
+		//$(this).index();//返回点击的圆点的下标
+		index = $(this).index();
+		tab();
+	})
+	//下一张
+	$(".right-arrow").on("click",next)
+
+	//上一张
+	$(".left-arrow").on("click",prev)
+	var timer = setInterval(next,4000);
+
+	$("#wrap").hover(function() {
+		clearInterval(timer);
+	},function() {
+		timer = setInterval(next,4000);
+	})
+})
+		for(var i = 0; i<$(".left button").length;i++){
+			
+		
+	$(".left button").eq(i).hover(function(){
+		var indexB = $(this).index()
+		$(".r").eq(indexB).addClass("r-active").siblings().removeClass("r-active")
+	})
+	}	
+		</script>
+	</body>
+</html>
+

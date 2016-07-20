@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>orders</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			border:0;
+			background-color: #f2f2f2;
+		}
+		.main{
+			max-width: 740px;
+			margin: 0 auto;
+		}
+		.ding{position: relative;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+				background-color: #e88f19;
+				font-size: 1.2rem;
+				color:white;
+				text-align: center;
+				height: 45px;
+				line-height: 45px;
+				/*margin-bottom: 15px;*/
+			}
+		   .ding img{
+				position: absolute;
+				left:15px;
+				top:9px;
+				height:60%;
+			}
+			
+			ul{
+				
+			}
+			ul li{
+				background-color: white;
+				font-size: 14px;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+			ul li:nth-child(1) p{
+				height: 35px;
+				line-height: 35px;
+				font-size: 16px;
+			}
+			.box{
+				color:#8d8e8e;
+			}
+			.box div{
+				position: relative;
+				border-bottom: 1px solid #e9eaea;
+				border-top: 1px solid #e9eaea;
+				margin-top: 10px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.box div img{
+				width: 70px;
+				float: left;
+				margin-right: 10px;
+				border:1px solid #eeeff0
+			}
+			.box div span{
+				float: left;
+			}
+			.liang{
+				position:absolute;
+				right: 0;
+				bottom:5px;
+			}
+			.dai{
+				float:right;
+				color: #8d8e8e;
+				text-decoration: none;
+			}
+			.dai:hover{
+				text-decoration: none;
+			}
+			.tuihuo{
+				float:right;
+				color: #8d8e8e;
+				text-decoration: none;
+				margin-right: 15px;
+				border:1px solid gray;
+				text-align: center;
+				width: 75px;
+				border-radius: 5px;
+			}
+			.tuihuo:hover{
+				text-decoration: none;
+			}
+			
+			
+			.jiage,.jiage1{
+				line-height: 45px;
+			}
+			.jiage{
+				border-bottom: 1px solid #eeeff0;
+			}
+			
+			.yuan{
+				float: right;
+			}
+			ul li:nth-child(3) p{
+				height: 30px;
+			}
+			ul li:nth-child(3) p:nth-child(1){
+				border-bottom: 1px solid #eeeff0;
+				color:#8d8e8e;
+			}
+			ul li:nth-child(3) p:nth-child(2){
+				/*border-bottom: 1px solid #eeeff0;*/
+				padding-top: 10px;
+				color:#333333;
+				margin-bottom: 100px;
+			}
+			button{
+				/*margin-top: 20px;*/
+				background-color: #e88f19;
+				width: 80%;
+				height: 45px;
+				color: white;
+				font-size: 1.3rem;
+				border:none;
+				border-radius: 10px;
+				margin: 20px auto;
+				display: block;
+			}
+			.main a:hover{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body >
+		<div class="main">
+		<p class="ding">
+			<a href="orders.html"><img src="../../img/arrow.png"/></a>
+			<span>订单详情</span>
+		</p>		
+		<ul>
+			<li>
+				<p>刘晓心  13562021254</p>
+				<p>广州市天河东圃时代TIT广场</p>
+			</li>
+			<li class="box">
+				<p class="clearfix">购买商品 
+					<a href="" class="dai">待评价</a>
+					<a href="" class="tuihuo">申请退货</a>
+				</p>
+				<div class="clearfix">
+				<img src="../../img/sousuojieguo.png" alt="" />
+				<span style="color:#333333">坚果特产山核桃奶油味碧根....</span>
+				<br />
+				<span>规格：1盒6片</span>
+				<br />
+				<span style="color:#d70000">￥29.5</span>
+				<span class="liang">x&nbsp;2</span>
+				</div>
+				<p class="jiage" class="clearfix">运费： <span class="yuan">￥10</span></p>
+				<p class="jiage1">备注：</p>
+				
+			</li>
+			<li>
+				<p>订单信息</p>
+				<p>
+					订单编号：SKYJ12525441
+					<br />
+					创建时间：2015-10-02 &nbsp;&nbsp;&nbsp;&nbsp;  12:20
+					<br />
+					付款时间：2015-10-02 &nbsp;&nbsp;&nbsp;&nbsp;  12:26
+					<br />
+					物流信息：申通物流  &nbsp;&nbsp;&nbsp;&nbsp; 5221255142
+					<br />
+					收货时间：2015-10-02 &nbsp;&nbsp;&nbsp;&nbsp;  12:26
+				</p>
+			</li>
+		</ul>
+		<a href="pingjia.html"><button>去评价</button></a>
+		
+  </div>
+	</body>
+</html>

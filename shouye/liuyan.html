@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>dingwei</title>
+		<link rel="stylesheet" href="../css/pubilic.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			border:0;
+			background-color: #f2f2f2;
+			
+		}
+		.main{
+			position: relative;
+			max-width: 740px;
+			margin: 0 auto;
+		}
+			p{	position: relative;
+				width: 100%;
+			margin: 0;
+			padding: 0;
+				background-color: #e88f19;
+				font-size: 1.5rem;
+				color:white;
+				text-align: center;
+				height: 45px;
+				line-height: 45px;
+				margin-bottom: 10px;
+
+			}
+			p img{
+				position: absolute;
+				left:15px;
+				top:4px;
+				height:80%;
+			}
+			.box{
+				
+				width: 95%;
+				height: 40px;
+				background-color: white;
+				margin: 0 auto;
+				border-radius: 20px;
+				
+			}
+			.box a{
+				background: url(../img/icon1.png);
+				width: 20px;
+				height: 20px;
+				margin-top: 10px;
+				display: block;
+				background-size: 40px 20px;
+				background-position: 0px;
+				display: inline-block;
+				float: left;
+				margin-left: 15px;
+			}
+			.box input{
+				height: 40px;
+				border:none;
+				outline:none;
+				font-size: 1rem;
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				float: left;
+				margin-left: 10px;
+
+			}
+			.lian{
+				width: 75px;
+				height: 75px;
+				display: block;
+				margin: 80px auto 20px;
+				
+			}
+			h2,h3{
+				width: 100%;
+				text-align: center;
+				color:#a3a3a3
+			}
+			h2{
+				font-size: 1rem;
+			}
+			
+			h3{
+				font-size: 0.9rem;
+			}
+			#need{
+				display: block;
+				margin: 30px auto 0;
+				width: 100px;
+				height: 32px;
+				border-radius: 5px;
+				background-color: #ededed;
+			}
+			.meng{
+				position: absolute;
+				top:0;
+				/*left: 5%;*/
+				width: 100%;
+				height: 100%;
+				background-color:rgba(168,168,168,0.5);
+				display: none;
+			}
+			.meng ul{
+				width: 90%;
+				height: 60%;
+				background-color: white;
+				margin: auto;
+				margin-top: 20%;
+				
+			}
+			.meng ul li:nth-child(1){
+				background-color: #f2f2f2;
+				height: 30px;
+				line-height: 30px;
+				font-size: 1rem;
+				color: #909090;
+			}
+			.meng ul li:nth-child(1){
+				text-indent: 15px;
+			}
+			.meng ul li:nth-child(2){
+				width: 90%;
+				height:70%;
+				margin: 20px auto;
+			}
+			.meng ul li:nth-child(2) textarea{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding-top: 10px;
+				border:1px solid #e3e3e3;
+				font-size: 1rem;
+				overflow: hidden;
+				text-indent: 10px;
+			}
+			.meng ul li:nth-child(3){
+				width: 100%;
+				
+			}
+			#tijiao{
+				height: 30px;
+				width: 100px;
+				background-color: #ef962c;
+				display: block;
+				margin: 40px auto;
+			}
+			#back{
+				display: block;
+				float: right;
+				margin-right: 15px;
+				color:#555555;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="main">
+		<p>
+			<a href="sousuo.html"><img src="../img/arrow.png"/></a>
+			<span>搜索</span>
+		</p>		
+		<div class="box">
+		 	<a href=""></a>
+		 	<input type="text" placeholder="输入关键词/商品名称" />
+		 </div>
+		 <img src="../img/lian.png" class="lian"/>
+		 <h2>抱歉，没有找到相关商品！</h2>
+		 <h3>给我留言告诉我你喜欢的东西</h3>
+		 
+		 <button id="need">我要留言</button>
+		 <div class="meng">
+		 	<ul>
+		 		<li><span>留言</span> <a href="" id="back">X</a></li>
+		 		<li>
+		 		
+		 			<textarea name="" rows="" cols="" placeholder="想买的什么商品？"></textarea>
+		 		
+		 		</li>
+		 		<li>
+		 			<button id="tijiao">提交</button>
+		 		</li>
+		 	</ul>
+		</div>
+		</div>
+		<div class="footerB">
+		<footer class="footer_bar">
+			<ul class="clearfix">
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="">会员集锦</a></li>
+				<li><a href="">分类</a></li>
+				<li><a href="">购物车</a></li>
+				<li><a href="../mine/denglu.html">我的</a></li>
+			</ul>
+		</footer>
+		</div>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+			$("#need").on("click",function(){
+				$(".meng").css({
+					display:"block"
+				})
+			})
+			$("#back").on("click",function(){
+				$(".meng").css({
+					display:"none"
+				})
+			})
+			
+		</script>
+			
+		
+	</body>
+</html>
