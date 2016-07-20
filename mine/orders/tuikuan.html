@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>orders</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			border:0;
+			background-color: #f2f2f2;
+		}
+		.main{
+			max-width: 740px;
+			margin: 0 auto;
+		}
+		.ding{position: relative;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+				background-color: #e88f19;
+				font-size: 1.2rem;
+				color:white;
+				text-align: center;
+				height: 45px;
+				line-height: 45px;
+				/*margin-bottom: 15px;*/
+			}
+		   .ding img{
+				position: absolute;
+				left:15px;
+				top:9px;
+				height:60%;
+			}
+			
+			ul{
+				
+			}
+			ul li{
+				background-color: white;
+				font-size: 14px;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+			ul li:nth-child(1) p{
+				height: 35px;
+				line-height: 35px;
+				font-size: 16px;
+			}
+			.box{
+				color:#8d8e8e;
+			}
+			.box div{
+				position: relative;
+				border-bottom: 1px solid #e9eaea;
+				border-top: 1px solid #e9eaea;
+				margin-top: 10px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.box div img{
+				width: 70px;
+				float: left;
+				margin-right: 10px;
+				border:1px solid #eeeff0
+			}
+			.box div span{
+				float: left;
+			}
+			.liang{
+				position:absolute;
+				right: 0;
+				bottom:5px;
+			}
+			.dai{
+				float:right;
+				color: #8d8e8e;
+				text-decoration: none;
+			}
+			.dai:hover{
+				text-decoration: none;
+			}
+			.tuihuo{
+				float:right;
+				color: #8d8e8e;
+				text-decoration: none;
+				/*margin-right: 15px;*/
+				border:1px solid gray;
+				text-align: center;
+				width: 75px;
+				border-radius: 5px;
+			}
+			.tuihuo:hover{
+				text-decoration: none;
+			}
+			.jiage,.jiage1{
+				line-height: 45px;
+			}
+			.jiage{
+				border-bottom: 1px solid #eeeff0;
+			}
+			
+			.yuan{
+				float: right;
+			}
+			ul li:nth-child(3) p{
+				height: 30px;
+			}
+			ul li:nth-child(3) p:nth-child(1){
+				border-bottom: 1px solid #eeeff0;
+				color:#8d8e8e;
+			}
+			ul li:nth-child(3) p:nth-child(2){
+				/*border-bottom: 1px solid #eeeff0;*/
+				padding-top: 10px;
+				color:#333333;
+				margin-bottom: 100px;
+			}
+			.queren{
+				/*margin-top: 20px;*/
+				background-color: #e88f19;
+				width: 80%;
+				height: 45px;
+				color: white;
+				font-size: 1.3rem;
+				border:none;
+				border-radius: 10px;
+				margin: 20px auto;
+				display: block;
+			}
+			.mengTj{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top:0;
+				background-color: rgba(144,144,144,0.5);
+				display: none;
+				max-width: 740px;
+				
+			}
+			.tj{
+				width: 90%;
+				/*height: 200px;*/
+				background-color: white;
+				margin: 13% auto;
+				font-size: 15px;
+				
+			}
+			.tj li{
+				padding-left: 10px;
+				padding-right: 15px;
+				margin-top: 10px;
+				
+			}
+			
+			.tj li:nth-child(1){
+				height: 30px;
+				line-height: 30px;
+				font-size: 15px;
+				color: #a7a7a7;
+				background-color: #f2f2f2;
+			}
+			.tj li:nth-child(1) span{
+				float: right;
+			}
+			.xing{
+				color: red;
+			}
+			.reasion{
+				height: 45px;
+				line-height: 45px;
+			}
+			select {
+   margin: 0; 
+padding: 0; 
+outline: none; 
+height: 25px; 
+line-height: 25px; 
+font-size: 15px;
+padding-left: 5px;
+width: 120px; 
+border: #e3e3e3 1px solid; 
+border-radius: 0px; 
+display: inline-block; 
+font: normal 12px/25px "微软雅黑", "SimSun", "宋体", "Arial"; 
+background-size: 5px 5px,5px 5px,25px 25px,1px 25px; 
+ 
+background-image: repeating-linear-gradient(225deg,#bfbfbf 0%,#bfbfbf 50%,transparent 50%,transparent 100%), 
+repeating-linear-gradient(135deg,#bfbfbf 0%,#bfbfbf 50%,transparent 50%,transparent 100%), 
+linear-gradient( #FFFFFF 0%,#F8F9Fd, #EFFAFA 100%), 
+repeating-linear-gradient( rgb(191, 204, 220) 0%,rgb(191, 204, 220) 100%); 
+background-repeat: no-repeat; 
+background-position: 101px 10px,106px 10px,right top,92px top; 
+
+/*去除默认样式*/
+-webkit-appearance: none 
+}		
+		.toright{
+			float:right;
+		}
+		.jine{
+			height: 45px;
+			line-height: 45px;
+		}
+		.shuoming{
+			height: 60px;
+			
+		}
+		.shuoming textarea{
+			vertical-align: text-top;
+			width: 65%;
+			text-indent: 10px;
+			height: 50px;
+			border:none;
+			border:1px solid #bfbfbf;
+
+		}
+		.shangchuan{
+			height: 80px;
+		}
+		.shangchuan p{
+			display: inline-block;
+			width: 60%;
+			vertical-align: text-top;
+		}
+		.image{
+			height: 30px;
+			width: 70%;
+		}
+		
+		.sc_img img{
+			width: 65px;
+			margin-right: 15px;
+		
+		}
+		.tijiao{
+			margin-left: 10px;
+			width: 25%;
+			height: 30px;
+			background-color:#e88f19;
+			margin-top:30px ;
+			border-radius: 5px;
+			border:none;
+			font-size: 15px;
+			color: white;
+			margin-bottom: 15px;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+		</style>
+	</head>
+	<body >
+		<div class="main">
+		<p class="ding">
+			<a href="orders.html"><img src="../../img/arrow.png"/></a>
+			<span>订单详情</span>
+		</p>		
+		<ul>
+			<li>
+				<p>刘晓心  13562021254</p>
+				<p>广州市天河东圃时代TIT广场</p>
+			</li>
+			<li class="box">
+				<p class="clearfix">购买商品 <a href="javascript:viod()" class="tuihuo">申请退货</a></p>
+				<div class="clearfix">
+				<img src="../../img/sousuojieguo.png" alt="" />
+				<span style="color:#333333">坚果特产山核桃奶油味碧根....</span>
+				<br />
+				<span>规格：1盒6片</span>
+				<br />
+				<span style="color:#d70000">￥29.5</span>
+				<span class="liang">x&nbsp;2</span>
+				</div>
+				<p class="jiage" class="clearfix">运费： <span class="yuan">￥10</span></p>
+				<p class="jiage1">备注：</p>
+				
+			</li>
+			<li>
+				<p>订单信息</p>
+				<p>
+					订单编号：SKYJ12525441
+					<br />
+					创建时间：2015-10-02 &nbsp;&nbsp;&nbsp;&nbsp;  12:20
+					<br />
+					付款时间：2015-10-02 &nbsp;&nbsp;&nbsp;&nbsp;  12:26
+					<br />
+					物流信息：申通物流  &nbsp;&nbsp;&nbsp;&nbsp; 5221255142
+				</p>
+			</li>
+		</ul>
+		<a href="tuihuo-details.html"><button class="queren">确认退货</button></a>
+		<div class="mengTj">
+			<!--<div >-->
+				<ol class="tj">
+					<li>
+						申请退款  <span class="quxiao">X</span>
+					</li>
+					<li class="reasion clearfix">
+						退款原因<span class="xing">*</span>：<select name="" id="" >
+							<option value="">请选择退货原因</option>
+							<option value="">收到商品破损</option>
+							<option value="">商品发错/漏发</option>
+							<option value="">收到商品描述不符</option>
+							<option value="">商品质量问题</option>
+						</select><span class="toright"><span class="xing">*</span>选项必填</span>
+					</li>
+					<li class="jine">
+						退款金额<span class="xing">*</span>：￥29.5
+					</li>
+					<li  class="shuoming">
+						退款说明&nbsp;&nbsp;：<textarea name="" rows="" cols=""></textarea>
+					</li>
+					<li  class="shangchuan">
+						上传凭证&nbsp;&nbsp;：<p><button class="image">选择要上传的图片</button>
+							<br />
+							每张图片大小不超过5M,最多3张，支持JPG、PNG、BMP格式</p>
+					</li>
+					<li class="sc_img">
+						<img src="../../img/sc_img1.png"/>
+						<img src="../../img/sc_img2.png"/>
+					</li>
+					<button class="tijiao">提交</button>
+				</ol>
+		</div>
+		
+		
+  </div>
+  	<script type="text/javascript" src="../../js/jquery.min.js">
+  		
+  	</script>
+  	<script type="text/javascript">
+  		$(".tuihuo").click(function(){
+  			$(".mengTj").css({
+  				display:"block"
+  			})
+  		})
+  		$(".quxiao").click(function(){
+  			$(".mengTj").css({
+  				display:"none"
+  			})
+  		})
+  	</script>
+  
+  
+  
+  
+  
+  
+	</body>
+</html>

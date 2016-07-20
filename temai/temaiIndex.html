@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<title>index</title>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			border:0;
+			background-color: #f2f2f2;
+		}
+		.main{
+			max-width: 740px;
+			width: 100%;
+			/*height:100%;*/
+			margin: 0 auto;
+		}
+			p{	position: relative;
+				width: 100%;
+			margin: 0;
+			padding: 0;
+				background-color: #dddedf;
+				height: 45px;
+				line-height: 45px;
+			}
+			.share{	
+				float: right;
+				display: inline-block;
+				text-decoration: none;
+				color:white;
+				width: 30px;
+				height: 30px;
+				background: url(../img/icon.png) no-repeat;
+				background-size: 1000%;
+				background-position: -94px -276px;
+				margin-right: 10px;
+				margin-top: 7.5px;
+				
+			}
+			.pingjia{
+				display: inline-block;
+				float: right;
+				text-decoration: none;
+				width: 30px;
+				height: 30px;
+				background: url(../img/icon.png) no-repeat;
+				background-size: 1000%;
+				background-position: -47px -276px;
+				margin-right: 30px;
+				margin-top: 7.5px;
+			}
+			
+			p img{
+				display: inline-block;
+				float: left;
+				height: 65%;
+				margin-top: 7.5px;
+				margin-left: 10px;
+				
+			}
+			
+			ul{
+				background-color: white;
+			}
+			
+			.part1{
+				width: 100%;
+				background-color: white;
+			}
+			.part1 img{
+				width: 80%;
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			.part1 ol li{
+				background-color: white;
+			}
+			.details{
+				overflow: hidden;
+				padding: 10px;
+			}
+			.details li{
+				padding-bottom: 10px;
+				padding-top: 10px;
+
+			}
+			.details li:nth-child(1){
+				font-size: 15px;
+
+			}
+			.details li:nth-child(2){
+				border-bottom: 1px solid #a3a3a3;
+				color: #a9a9a9;
+				
+			}
+			.details li:nth-child(2) span:nth-child(1){
+				font-size: 16px;
+			}
+			.details li:nth-child(2) span:nth-child(2){
+				font-size: 13px;
+				margin-left: 25px;
+			}
+			.details li:nth-child(2) span:nth-child(3){
+				font-size: 13px;
+				display: inline-block;
+				float: right;
+				
+			}
+			.details li:nth-child(3) span:nth-child(1){
+				font-size: 13px;
+				color:gray;
+			}
+			.details li:nth-child(3) span:nth-child(2){
+				font-size: 16px;
+				display: inline-block;
+				float: right;
+				color: gray;
+			}
+			.part2{
+				width: 100%;
+				display: block;
+			}
+			.part2 ol li:nth-child(1){
+				display: inline-block;
+				float: left;
+				width: 50%;
+				text-align: center;
+				font-size: 15px;
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #a3a3a3;
+			}
+			.part2 ol li:nth-child(2){
+				display: inline-block;
+				float: left;
+				width: 50%;
+				text-align: center;
+				font-size: 15px;
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #a3a3a3;
+			}
+			.part2 ol li:nth-child(1) div{
+				width: 60px;
+				height: 40px;
+				line-height: 40px;
+				/*border-bottom: 2px solid red;*/
+				margin: 0 auto;
+			}
+			.part2 ol li:nth-child(2) div{
+				width: 60px;
+				height: 40px;
+				line-height: 40px;
+				/*border-bottom: 2px solid red;*/
+				margin: 0 auto;
+			}
+			.part2 ol{
+				position: relative;
+			}
+			
+			#content1{
+				padding: 10px;
+				/*display: none;*/
+			}
+			#content2{
+				/*padding: 10px;*/
+				position: relative;
+				top:0px;
+				overflow: hidden;
+				width: 100%;
+				height: 350px;
+				/*background-color: blue;*/
+				display: none;
+			}
+			#content1 img{
+				margin-top: 10px;
+				width: 100%;
+				/*height: 100%;*/
+			}
+			.part2 ol li:nth-child(5){
+				padding: 10px;
+			}
+			.part2 ol li:nth-child(6){
+				padding: 10px;
+			}
+			dl dt{
+				height: 50px;
+				width: 100%;
+				background-color: #f2f2f2;
+			}
+			.car{
+				display: block;
+				width: 35px;
+				height: 35px;
+				/*background-color: red;*/
+				float: left;
+				margin-top: 7.5px;
+				margin-left: 10px;
+				background: url(../img/icon.png) no-repeat;
+				background-size: 650%;
+				background-position: 2px -207px;
+				
+			}
+			dl dt div a{
+				color:white;
+				text-decoration: none;
+			}
+			dl dt div a:hover{
+				
+				text-decoration: none;
+			}
+			dl dt div:nth-child(1){
+				display: inline-block;
+				float: right;
+				background-color:#e63948;
+				width: 100px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				border-radius: 5px;
+				margin-top: 7.5px;
+				margin-right: 10px;
+				font-size: 15px;
+				color: white;
+				
+			}
+			dl dt div:nth-child(2){
+				display: inline-block;
+				float: right;
+				width: 100px;
+				height: 35px;
+				line-height: 35px;
+				background-color:#e69c31;
+				text-align: center;
+				border-radius: 5px;
+				margin-top: 7.5px;
+				margin-right: 30px;
+				font-size: 15px;
+				color: white;
+			}
+
+			.active{
+
+			display: block;
+			border-bottom: 2px solid red;
+			}	
+			.ping{
+				padding: 10px;
+				height: 50px;
+			}
+			.ping h3{
+				display: inline-block;
+				float:left;
+				
+			}
+			.ping a{
+				display: block;
+				width: 15px;
+				height: 15px;
+				float: left;
+				/*background-color: red;*/
+				background: url(../img/icon.png) no-repeat;
+				background-size: 1000%;
+				background-position: -59px -89px;
+				margin: 5px;
+			}
+			
+			.ping a:nth-child(6){
+				background-position: -46px -89px;
+			}
+			
+			.date{
+				float: right;
+				margin-right: 10px;
+			}
+			h4{
+				padding: 10px;
+			}
+			.meng,.meng1{
+				position: fixed;
+				top:0;
+				width: 100%;
+				height: 100%;
+				background-color:rgba(168,168,168,0.5);
+				max-width: 740px;
+				display: none;
+			}
+			
+			.tan{
+				position: relative;
+				background: url(../img/temai/shengji.png);
+				background-size: 100% 100%;
+				width: 70%;
+				height:40%;
+				margin: auto;
+				margin-top: 35%;
+			}
+			.tan button{
+				position: absolute;
+				bottom: 10%;
+				font-size: 1.5rem;
+				color: white;
+				background-color: #a4da42;
+				width: 40%;
+				height: 40px;
+				border:1px solid #72bf00;
+				border-radius: 20px;
+				/*display: block;*/
+				margin-left: 30%;	
+			}
+			.tanShare{
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				height: 250px;
+				background-color: white;
+				max-width: 740px;
+			}
+			.tanShare h1{
+				width: 100%;
+				font-size: 1.5rem;
+				font-weight: 100;
+				text-align: center;
+				margin-top: 15px;
+			}
+			.tanShare ul{
+				width: 100%;
+				max-width: 740px;
+				margin-top: 15px;
+				
+			}
+			.tanShare ul li{
+				width: 33.3%;
+				text-align: center;
+				display: inline-block;
+				float: left;
+				font-size: 1rem;
+			
+			}
+			.tanShare ul li a{
+				width: 70px;
+				height: 70px;
+				display: block;
+				margin: auto;
+			}
+			.haoyou{
+				background: url(../img/icon.png) no-repeat;
+				background-size:410%;
+				background-position: -216px -33px;
+			}
+			.pengyou{
+				background: url(../img/icon.png) no-repeat;
+				background-size: 410%;
+				background-position: -145px -33px;
+			}
+			.weibo{
+				background: url(../img/icon.png) no-repeat;
+				background-size: 410%;
+				background-position: -72px -33px;
+			}
+			#cancel{
+				width: 80%;
+				height: 45px;
+				background-color: #cbcccd;
+				border-radius: 10px;
+				font-size: 1rem;
+				margin: 25px 10%;
+				border:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+		<p>
+			<a href=""><img src="../img/arrow.png"/></a>
+			<a href="####" class="share"></a>
+			<a href="####" class="pingjia"></a>
+		</p>		
+		<ul>
+			<li class="part1">
+			<img src="../img/temai/p1.png"/>
+			<ol class="details">
+				<li>Huawei/华为 荣耀7 全网通4G手机</li>
+				<li><span style="color: #fb4216;">￥11.5</span><span>原价：￥12.8</span><span>销量1235</span></li>
+				<li><span>限时：2天23分02秒</span><span>限量：120件</span></li>
+			</ol>
+			</li>
+			<li class="part2">
+				<ol>
+					<li><div id="shang" class="active">商品详情</div></li>
+					<li><div id="yong">用户评价</div></li>
+					<li id="content1">
+							<img src="../img/temai/p2.png"/>
+					</li>
+					<li id="content2">
+						<div class="ping">
+							<h3>小球：</h3>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<a href=""></a>
+							<div class="date">
+								2016-9-1
+							</div>
+						</div>
+						<h4>
+								手机很垃圾，不好用
+							</h4>
+					</li>
+					<li>废话一大堆</li>
+					<li>废话一大堆</li>
+				</ol>
+				<dl>
+					<dt> 
+						<div><a href="">加入购买车</a></div>
+						<div id="buy">立即购买</div>
+						<a href="" class="car"></a>
+					</dt>
+				</dl>
+			</li>
+		</ul>
+		<div class="meng">
+			<div class="tan">
+				<a href="chongzhi.html">
+			<button>立即充值</button>
+			</a>
+			</div>
+		</div>
+		<div class="meng1">
+			<div class="tanShare">
+				<h1>分享到</h1>
+				<ul>
+					<li><a href="" class="haoyou"></a>微信好友</li>
+					<li><a href="" class="pengyou"></a>微信朋友圈</li>
+					<li><a href="" class="weibo"></a>新浪微博</li>
+				</ul>
+				<button id="cancel">取&nbsp;&nbsp;消</button>
+			</div>
+			
+		</div>
+		</div>
+		<script src="../js/jquery.min.js"></script>
+		<script type="text/javascript">
+		var content1 = document.getElementById("content1")
+		var content2 = document.getElementById("content2")
+		var shang = document.getElementById("shang")
+		var yong = document.getElementById("yong")
+			var btn=[];
+			btn.push(shang)
+			btn.push(yong)
+			var list = [];
+			list.push(content1);
+			list.push(content2);
+          for(var i = 0; i < btn.length;i++) {		
+			(function(index) {
+				
+				btn[index].onclick = function() {
+					for(var j = 0; j < list.length; j++) {
+						list[j].style.display = "none";
+					}
+					list[index].style.display = "block";
+					for(var k = 0; k < btn.length;k++){
+				btn[k].className="";
+				}
+					this.className ="active";
+				}	
+			}(i))
+		}
+          $("#buy").click(function(){
+          	$(".meng").css({
+          		display:"block"
+          	})
+          })
+          $(".share").click(function(){
+          
+          	$(".meng1").css({
+          		display:"block"
+          	})
+          })
+          $("#cancel").click(function(){
+          
+          	$(".meng1").css({
+          		display:"none"
+          	})
+          })
+		</script>
+	</body>
+</html>

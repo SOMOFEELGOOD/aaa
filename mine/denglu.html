@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>denglu</title>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			border:0;
+			background-color: #f2f2f2;
+		}
+		.main{
+			max-width: 740px;
+			margin: 0 auto;
+		}
+			p{	position: relative;
+				width: 100%;
+			margin: 0;
+			padding: 0;
+				background-color: #e88f19;
+				font-size: 1.5rem;
+				color:white;
+				text-align: center;
+				height: 45px;
+				line-height: 45px;
+			}
+			.zhuche{	
+				position: absolute;
+				right:15px;
+				text-decoration: none;
+				color:white;
+				
+			}
+			
+			p img{
+				position: absolute;
+				left:15px;
+				top:4px;
+				height:80%;
+			}
+			.logo{
+				width: 100%;
+				text-align: center;
+				
+			}
+			.logo img{
+				margin: 10%;
+			}
+			ul li{
+				width: 90%;
+				list-style: none;
+				/*float: none;*/
+				/*display: block;*/
+				/*margin-bottom: 20px;*/
+				border-radius: 10px;
+				/*overflow: hidden;*/
+				height: 45px;
+				background-color: white;
+				margin: 0 auto;
+				margin-bottom: 15px;
+			}
+			
+			ul li input{
+				width: 80%;
+				height: 45px;
+				float: left;
+				margin: 0;
+				padding: 0;
+				border:none;
+				outline: none;
+				/*border-radius-t: 10px;*/
+				height: 45px;
+				font-size: 18px;
+			}
+			ul li img{
+				width: 30px;
+				float: left;
+				/*border-radius: 10px;*/
+				/*height: 45px;*/
+				height: 30px;
+				margin-top: 7.5px;
+				margin-left: 15px;
+				margin-right: 10px;
+			}
+			
+			ol li{
+
+				width: 90%;
+				margin: 0 auto;
+				list-style: none;
+			}
+			ol li a{
+				text-decoration: none;
+			}
+			ol li:nth-child(1) a{
+				color:#e88f19;
+			}
+			ol li:nth-child(2) a{
+				color: white;
+			}
+			ol li:nth-child(1){
+				text-align: right;
+			}
+			ol li:nth-child(2){
+				text-align: center;
+				margin-top: 35px;
+				height: 45px;
+				line-height: 45px;
+				font-size: 20px;
+				background-color: #e88f19;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+		<p>
+			<a href="../index.html"><img src="../img/arrow.png"/></a>
+			<span>登录</span>
+			<a href="resetpwd.html" class="zhuche">注册</a></p>		
+		<div class="logo">
+			<img src="../img/logo.png"/>
+		</div>
+		<form action="">
+			<ul>
+				<li>
+				<img src="../img/phone.png"/>
+				<input type="text"  placeholder="请输入账号/手机号"/>
+				</li>
+				<li>
+				<img src="../img/pwd.png"/>
+				<input type="password" name="" id="pwd" value="" placeholder="请输密码" />
+				</li>
+			</ul>
+		</form>
+		<ol>
+			<li><a href="makesure.html">忘记密码？</a></li>
+			<li><a href="">登录</a></li>
+		</ol>
+		</div>
+		
+		
+	</body>
+</html>

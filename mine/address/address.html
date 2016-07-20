@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>orders</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		    html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			border:0;
+			background-color: #f2f2f2;
+		}
+		    .main{
+			max-width: 740px;
+			margin: 0 auto;
+		}
+		    .ding{position: relative;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+				background-color: #e88f19;
+				font-size: 1.2rem;
+				color:white;
+				text-align: center;
+				height: 45px;
+				line-height: 45px;
+			}
+		    .ding img{
+				position: absolute;
+				left:15px;
+				top:13px;
+				height:40%;
+			}
+			.bianji{
+				float:right;
+				margin-right: 10px;
+				color:white;
+				font-size: 1rem;
+			}
+			.bianji:hover{
+				text-decoration: none;
+			}
+			
+			ul{
+				margin-top: 10px;
+				border-top: 1px solid #a9a9a9;
+			}
+			ul li{
+				height: 48px;
+				background-color: white;
+				padding-left: 10px;
+				line-height: 48px;
+				font-size: 1rem;
+				border-bottom: 1px solid #a9a9a9;
+			}
+			.wai{
+				width: 50px;
+				height: 25px;
+				background-color: #e88f19;
+				display: inline-block;
+				float: right;
+				margin-top: 10px;
+				margin-right: 10px;
+				/*border:1px solid #a9a9a9;*/
+				border-radius: 15px;
+			}
+			.nei{
+				width: 25px;
+				height: 24px;
+				border:1px solid #a9a9a9;
+				border-radius: 15px;
+				background-color: white;
+				float: right;
+			}
+			.activeBtn{
+				float: left;
+				background-color: #e88f19;
+			}
+			.activeBg{
+				background-color: gray;
+			}
+			select{
+				width: 60px;
+			}
+		</style>
+	</head>
+	<body >
+		<div class="main">
+		<p class="ding">
+			<a href="../mine.html"><img src="../../img/arrow.png"/>
+			<a href="adderess_bianji.html" class="bianji">编辑</a>
+			</a>
+			<span>收货地址</span>
+		</p>		
+		<ul>
+			<li>收货人姓名</li>
+			<li>联系电话</li>
+			<li>城市：省<select id="province">
+		<!-- <option>北京</option>
+		<option>天津</option> -->
+	</select>
+	城市&nbsp;<select id="city"></select>
+	区&nbsp;<select id="count"></select>
+			</li>
+			<li>
+				小区、街道、门牌等详细信息
+			</li>
+			<li class="clearfix">
+				设为默认地址
+				<div class="wai clearfix">
+					<div class="nei">
+						
+					</div>
+				</div>
+			</li>
+		</ul>
+  </div>
+ 		<script type="text/javascript" src="../../js/china.js"></script>
+ 		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+ 		<script type="text/javascript">
+ 	var province = document.getElementById("province");
+	var city = document.getElementById("city");
+	var count = document.getElementById("count");
+
+	var chinaArea = JSON.parse(chinaArea);//将字符串格式的json数据转换成对象
+	// var chinaArea = eval("("+chinaArea+")");
+	// var chinaArea = new Function("return " + chinaArea)();
+//	console.log(chinaArea)
+	//1.遍历省份
+	var provinceList = chinaArea.china.province;//数组
+	for(var i = 0 ; i < provinceList.length; i++) {
+		var option = document.createElement("option");
+		option.innerHTML = provinceList[i]["-name"];
+		province.appendChild(option);
+	}
+
+	province.onchange = function() {
+		//选择省份之后，市区跟着变化
+		cityData();
+		countData();
+	}
+	cityData();
+	//市区的数据填充
+	var sIndex = 0;
+	var cityIndex = 0;
+	function cityData() {
+		//清除原来的市区信息
+		city.innerHTML = "";
+		//2.遍历市区
+		sIndex = province.selectedIndex;
+		for(var j = 0; j < provinceList[sIndex].city.length;j++) {
+			var option = document.createElement("option");
+			option.innerHTML = provinceList[sIndex].city[j]["-name"];
+			city.appendChild(option);
+		}
+	}
+
+	//县区数据填充
+	
+	function countData() {
+		//清除原来的县区信息
+		count.innerHTML = "";
+
+		// 
+		cityIndex = city.selectedIndex;
+		var countList = chinaArea.china.province[sIndex].city[cityIndex].county; 
+		for(var k = 0; k < countList.length; k++) {
+			var option = document.createElement("option");
+			option.innerHTML = countList[k]["-name"];
+			count.appendChild(option);
+		}
+	}
+
+	city.onchange = function() {
+		countData();
+	}
+	countData();
+	
+	
+		$(".wai").click(function(){
+			$(".wai").toggleClass("activeBg")
+			$(".nei").toggleClass("activeBtn")
+		})
+ 		</script>
+	</body>
+</html>

@@ -1,0 +1,505 @@
+{
+	"index.html": {
+		"resources": [
+			"img/icon2.png",
+			"img/channel3.jpg",
+			"js/jquery.min.js",
+			"img/te.png",
+			"img/icon1.png",
+			"img/channel1.jpg",
+			"img/channel2.jpg",
+			"img/icon.png",
+			"css/pubilic.css",
+			"img/channel4.jpg",
+			"img/jinbao.png",
+			"img/channel5.jpg",
+			"img/shenjia.png",
+			"img/h1.png",
+			"css/reset.css",
+			"mine/mine.html",
+			"live/live.html",
+			"kefu/kefu.html",
+			"yongping/yongping.html",
+			"jiaju/jiaju.html",
+			"food/food.html",
+			"temai/temaiIndex.html",
+			"shouye/sousuo.html"
+		],
+		"refer": [
+			"mine/mine.html",
+			"live/live.html",
+			"kefu/kefu.html",
+			"yongping/yongping.html",
+			"jiaju/jiaju.html",
+			"food/food.html",
+			"temai/temaiIndex.html",
+			"shouye/sousuo.html"
+		]
+	},
+	"mine/mine.html": {
+		"resources": [
+			"img/r_arrow.png",
+			"mine/information/information.html",
+			"img/mineheader.png",
+			"mine/address/address.html",
+			"mine/collection/collection.html",
+			"mine/wallet/minewallet.html",
+			"mine/orders/orders.html",
+			"mine/upgrade/upgrade.html",
+			"index.html",
+			"mine/more/more.html",
+			"img/icon.png",
+			"js/jquery.min.js",
+			"css/pubilic.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"mine/information/information.html",
+			"mine/address/address.html",
+			"mine/collection/collection.html",
+			"mine/wallet/minewallet.html",
+			"mine/orders/orders.html",
+			"mine/upgrade/upgrade.html",
+			"index.html",
+			"mine/more/more.html"
+		]
+	},
+	"mine/information/information.html": {
+		"resources": [
+			"img/arrow.png",
+			"img/touxiang.png",
+			"mine/information/xiugai.html",
+			"mine/information/name.html",
+			"mine/information/number.html",
+			"mine/mine.html",
+			"mine/information/qianbao.html",
+			"mine/information/gongying.html"
+		],
+		"refer": [
+			"mine/information/xiugai.html",
+			"mine/information/name.html",
+			"mine/information/number.html",
+			"mine/mine.html",
+			"mine/information/qianbao.html",
+			"mine/information/gongying.html"
+		]
+	},
+	"mine/information/xiugai.html": {
+		"resources": [
+			"mine/information/information.html"
+		],
+		"refer": [
+			"mine/information/information.html"
+		]
+	},
+	"mine/information/name.html": {
+		"resources": [
+			"mine/information/information.html"
+		],
+		"refer": [
+			"mine/information/information.html"
+		]
+	},
+	"mine/information/bianji_n.html": {
+		"resources": [
+			"mine/information/number.html",
+			"img/arrow.png"
+		],
+		"refer": [
+			"mine/information/number.html"
+		]
+	},
+	"mine/information/number.html": {
+		"resources": [
+			"mine/information/bianji_n.html",
+			"mine/information/information.html"
+		],
+		"refer": [
+			"mine/information/bianji_n.html",
+			"mine/information/information.html"
+		]
+	},
+	"mine/address/address.html": {
+		"resources": [
+			"js/china.js",
+			"mine/address/adderess_bianji.html",
+			"mine/mine.html",
+			"img/arrow.png",
+			"js/jquery.min.js",
+			"css/reset.css"
+		],
+		"refer": [
+			"mine/address/adderess_bianji.html",
+			"mine/mine.html"
+		]
+	},
+	"mine/address/adderess_bianji.html": {
+		"resources": [
+			"mine/address/address.html"
+		],
+		"refer": [
+			"mine/address/address.html"
+		]
+	},
+	"mine/collection/collection.html": {
+		"resources": [
+			"mine/mine.html",
+			"img/sousuojieguo.png",
+			"mine/collection/bianjiover.html"
+		],
+		"refer": [
+			"mine/mine.html",
+			"mine/collection/bianjiover.html"
+		]
+	},
+	"mine/wallet/minewallet.html": {
+		"resources": [
+			"mine/wallet/menu.html",
+			"img/wallet.png",
+			"mine/wallet/chongzhi.html",
+			"mine/mine.html"
+		],
+		"refer": [
+			"mine/wallet/menu.html",
+			"mine/wallet/chongzhi.html",
+			"mine/mine.html"
+		]
+	},
+	"mine/wallet/chongzhi.html": {
+		"resources": [
+			"mine/wallet/minewallet.html"
+		],
+		"refer": [
+			"mine/wallet/minewallet.html"
+		]
+	},
+	"mine/wallet/menu.html": {
+		"resources": [
+			"mine/wallet/minewallet.html"
+		],
+		"refer": [
+			"mine/wallet/minewallet.html"
+		]
+	},
+	"mine/orders/detais.html": {
+		"resources": [
+			"mine/orders/orders.html"
+		],
+		"refer": [
+			"mine/orders/orders.html"
+		]
+	},
+	"mine/orders/orders.html": {
+		"resources": [
+			"mine/orders/detais.html",
+			"mine/orders/daishou_details.html",
+			"mine/orders/finish.html",
+			"mine/mine.html",
+			"img/sousuojieguo.png",
+			"img/arrow.png",
+			"js/jquery.min.js",
+			"css/reset.css",
+			"mine/orders/tuikuan.html"
+		],
+		"refer": [
+			"mine/orders/detais.html",
+			"mine/orders/daishou_details.html",
+			"mine/orders/finish.html",
+			"mine/mine.html",
+			"mine/orders/tuikuan.html"
+		]
+	},
+	"mine/orders/daishou_details.html": {
+		"resources": [
+			"mine/orders/orders.html"
+		],
+		"refer": [
+			"mine/orders/orders.html"
+		]
+	},
+	"mine/orders/pingjia.html": {
+		"resources": [
+			"img/star1.png",
+			"img/star.png",
+			"mine/orders/orders.html"
+		],
+		"refer": [
+			"mine/orders/orders.html"
+		]
+	},
+	"mine/orders/finish.html": {
+		"resources": [
+			"mine/orders/pingjia.html"
+		],
+		"refer": [
+			"mine/orders/pingjia.html"
+		]
+	},
+	"mine/upgrade/upgrade.html": {
+		"resources": [
+			"mine/upgrade/chongzhiV.html",
+			"mine/mine.html",
+			"img/arrow.png"
+		],
+		"refer": [
+			"mine/upgrade/chongzhiV.html",
+			"mine/mine.html"
+		]
+	},
+	"mine/upgrade/chongzhiV.html": {
+		"resources": [
+			"img/zhuanshi.jpg",
+			"mine/upgrade/upgrade.html",
+			"mine/upgrade/chenggongV.html"
+		],
+		"refer": [
+			"mine/upgrade/upgrade.html",
+			"mine/upgrade/chenggongV.html"
+		]
+	},
+	"mine/upgrade/chenggongV.html": {
+		"resources": [
+			"img/chenggong.png",
+			"mine/upgrade/chongzhiV.html"
+		],
+		"refer": [
+			"mine/upgrade/chongzhiV.html"
+		]
+	},
+	"mine/more/more.html": {
+		"resources": [
+			"mine/mine.html",
+			"img/arrow.png",
+			"mine/more/help.html",
+			"mine/more/aboutUs.html",
+			"mine/more/fangkui.html"
+		],
+		"refer": [
+			"mine/mine.html",
+			"mine/more/help.html",
+			"mine/more/aboutUs.html",
+			"mine/more/fangkui.html"
+		]
+	},
+	"mine/more/help.html": {
+		"resources": [
+			"img/human.png",
+			"mine/more/wenti.html",
+			"img/phone_w.png",
+			"mine/more/more.html"
+		],
+		"refer": [
+			"mine/more/wenti.html",
+			"mine/more/more.html"
+		]
+	},
+	"mine/more/wenti.html": {
+		"resources": [
+			"mine/more/help.html"
+		],
+		"refer": [
+			"mine/more/help.html"
+		]
+	},
+	"mine/more/aboutUs.html": {
+		"resources": [
+			"mine/more/more.html"
+		],
+		"refer": [
+			"mine/more/more.html"
+		]
+	},
+	"mine/more/fangkui.html": {
+		"resources": [
+			"mine/more/more.html"
+		],
+		"refer": [
+			"mine/more/more.html"
+		]
+	},
+	"live/live.html": {
+		"resources": [
+			"img/live/Fa.png",
+			"img/live/fconn.png",
+			"img/live/laba.png",
+			"live/details.html",
+			"index.html",
+			"img/arrow.png"
+		],
+		"refer": [
+			"live/details.html",
+			"index.html"
+		]
+	},
+	"live/details.html": {
+		"resources": [
+			"img/live/f2.png",
+			"img/live/f1.png",
+			"img/live/phone.png",
+			"live/live.html"
+		],
+		"refer": [
+			"live/live.html"
+		]
+	},
+	"yongping/yongping.html": {
+		"resources": [
+			"index.html",
+			"img/yongping/y1.png",
+			"img/yongping/y2.png"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"kefu/kefu.html": {
+		"resources": [
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"jiaju/jiaju.html": {
+		"resources": [
+			"img/jiaju/a.png",
+			"index.html",
+			"jiaju/details.html",
+			"img/live/Fa.png"
+		],
+		"refer": [
+			"index.html",
+			"jiaju/details.html"
+		]
+	},
+	"food/food.html": {
+		"resources": [
+			"index.html",
+			"img/food/f1.png",
+			"img/food/f2.png",
+			"img/arrow.png",
+			"food/details.html"
+		],
+		"refer": [
+			"index.html",
+			"food/details.html"
+		]
+	},
+	"jiaju/details.html": {
+		"resources": [
+			"img/jiaju/c.png",
+			"img/jiaju/b.png",
+			"jiaju/makesure.html",
+			"jiaju/jiaju.html"
+		],
+		"refer": [
+			"jiaju/makesure.html",
+			"jiaju/jiaju.html"
+		]
+	},
+	"jiaju/makesure.html": {
+		"resources": [
+			"img/jiaju/d.png",
+			"img/jiaju/e.png",
+			"jiaju/details.html"
+		],
+		"refer": [
+			"jiaju/details.html"
+		]
+	},
+	"mine/orders/tuikuan.html": {
+		"resources": [
+			"img/sc_img2.png",
+			"mine/orders/tuihuo-details.html",
+			"img/sc_img1.png",
+			"mine/orders/orders.html"
+		],
+		"refer": [
+			"mine/orders/tuihuo-details.html",
+			"mine/orders/orders.html"
+		]
+	},
+	"mine/orders/tuihuo-details.html": {
+		"resources": [
+			"mine/orders/orders.html"
+		],
+		"refer": [
+			"mine/orders/orders.html"
+		]
+	},
+	"food/details.html": {
+		"resources": [
+			"img/food/f4.png",
+			"food/food.html",
+			"img/food/f3.png"
+		],
+		"refer": [
+			"food/food.html"
+		]
+	},
+	"mine/information/qianbao.html": {
+		"resources": [
+			"mine/information/information.html"
+		],
+		"refer": [
+			"mine/information/information.html"
+		]
+	},
+	"mine/information/gongying.html": {
+		"resources": [
+			"mine/information/information.html",
+			"img/arrow.png"
+		],
+		"refer": [
+			"mine/information/information.html"
+		]
+	},
+	"mine/collection/bianjiover.html": {
+		"resources": [
+			"mine/collection/collection.html"
+		],
+		"refer": [
+			"mine/collection/collection.html"
+		]
+	},
+	"shouye/sousuo.html": {
+		"resources": [
+			"index.html",
+			"img/arrow.png"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"temai/temaiIndex.html": {
+		"resources": [
+			"img/temai/p2.png",
+			"img/temai/p1.png",
+			"img/temai/shengji.png",
+			"temai/chongzhi.html"
+		],
+		"refer": [
+			"temai/chongzhi.html"
+		]
+	},
+	"temai/chenggong.html": {
+		"resources": [
+			"temai/temaiIndex.html",
+			"img/chenggong.png"
+		],
+		"refer": [
+			"temai/temaiIndex.html"
+		]
+	},
+	"temai/chongzhi.html": {
+		"resources": [
+			"temai/chenggong.html",
+			"img/zhuanshi.jpg",
+			"temai/temaiIndex.html"
+		],
+		"refer": [
+			"temai/chenggong.html",
+			"temai/temaiIndex.html"
+		]
+	}
+}

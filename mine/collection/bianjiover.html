@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>bianjiover</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			border:0;
+			/*background-color: #f2f2f2;*/
+		}
+		.main{
+			max-width: 740px;
+			margin: 0 auto;
+		}
+		.ding{position: relative;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+				background-color: #e88f19;
+				font-size: 1.2rem;
+				color:white;
+				text-align: center;
+				height: 45px;
+				line-height: 45px;
+			}
+		   .ding img{
+				position: absolute;
+				left:15px;
+				top:13px;
+				height:40%;
+			}
+			
+			
+			ul li{
+				background-color: white;
+				font-size: 14px;
+				padding: 10px;
+				border-bottom: 1px solid #f2f2f2;
+			}
+			
+			.box{
+				color:#8d8e8e;
+			}
+			
+			.box div img{
+				width: 70px;
+				float: left;
+				margin-right: 10px;
+				border:1px solid #eeeff0
+			}
+			.bianji{
+				float:right;
+				margin-right: 10px;
+				color:white;
+				font-size: 1rem;
+			}
+			.bianji:hover{
+				text-decoration: none;
+			}
+			.foot{
+				position:fixed;
+				bottom: 0;
+				width: 100%;
+				height: 55px;
+				line-height: 55px;
+				background-color: #f2f2f2;
+				margin-top: 350px;
+				font-size:1rem;
+				max-width: 740px;
+			}
+			.listall,.list{
+				width: 18px;
+				height: 18px;
+				border:1px solid gray;
+				display: inline-block;
+				border-radius: 10px;
+				float: left;
+				font-size: 1rem;
+				text-align: center;
+				line-height:18px;
+			}
+			.list{
+				margin-top: 25px;
+				margin-right: 10px;
+				color: white;
+			}
+			.listall{
+				margin-top: 18.5px;
+				margin-left: 10px;
+				margin-right: 10px;
+				color:#f2f2f2;
+			}
+			.active{
+				background-color: #e88f19 ;
+				border:none;
+			}
+			
+			
+			.foot button{
+				height: 35px;
+				width: 33%;
+				float: right;
+				margin: 10px;
+				border:none;
+				border-radius: 5px;
+				font-size: 1rem;
+				color: white;
+				background-color: #e94347;
+			}
+		</style>
+	</head>
+	<body >
+		<div class="main">
+		<p class="ding">
+			<a href="collection.html"><img src="../../img/arrow.png"/>
+			<a href="" class="bianji">完成</a>
+			</a>
+			<span>我的收藏</span>
+		</p>		
+		<ul>
+			<li class="box">
+				<p class="list active">√</p>
+				<div class="clearfix">
+				<img src="../../img/sousuojieguo.png" alt="" />
+				<span style="color:#333333">坚果特产山核桃奶油味碧根....</span>
+				<br />
+				<span>规格：1盒6片</span>
+				<br />
+				<span style="color:#d70000">￥29.5</span>
+			</li>
+			<li class="box">
+				<p class="list">√</p>
+				<div class="clearfix">
+				<img src="../../img/sousuojieguo.png" alt="" />
+				<span style="color:#333333">坚果特产山核桃奶油味碧根....</span>
+				<br />
+				<span>规格：1盒6片</span>
+				<br />
+				<span style="color:#d70000">￥29.5</span>
+			</li>
+		</ul>
+		<div class="foot clearfix">
+			<div class="listall">
+				√
+			</div>
+			全选
+			<button id="delete">删除</button>
+		</div>
+		
+  </div>
+  		<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  		<script type="text/javascript">
+  			$(".list").click(function(){
+				$(this).toggleClass("active")
+  			})
+  			$(".listall").click(function(){
+				$(this).toggleClass("active")
+				$(".list").addClass("active")
+			if(event.target.className == "listall"){
+				$(".list").removeClass("active")
+			}
+  			})
+  			$("#delete").click(function(){
+			$(".list.active").parent().remove()
+  			})
+  		</script>
+	</body>
+	
+</html>
